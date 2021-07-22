@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/im_adapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"
+        tools:src="@drawable/male_3"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:padding="10dp"
+        />
+    <TextView
+        android:id="@+id/tv_adapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/im_adapter"
+        app:layout_constraintBottom_toBottomOf="@+id/im_adapter"
+        app:layout_constraintTop_toTopOf="@+id/im_adapter"
+        android:layout_marginHorizontal="40dp"
+        tools:text="Имя фамилия"
+        android:textSize="20dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
